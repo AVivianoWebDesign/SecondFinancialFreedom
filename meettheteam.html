@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Meet the Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2nd Financial Freedom">
+  <meta charset="UTF-8">
+
+
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+  <style>
+    html {
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      font-size: 18px;
+      padding-bottom: 10px;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .main-nav {
+      list-style-type: none;
+      display: none;
+    }
+
+    .nav-links {
+      text-decoration: none;
+      color: white;
+    }
+
+    .main-nav li {
+      text-align: center;
+      margin: 15px auto;
+    }
+
+    .navbar-toggle {
+      position: absolute;
+      top: 250px;
+      right: 20px;
+      cursor: pointer;
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+
+    }
+
+    .active {
+      display: block;
+
+    }
+
+    @media screen and (min-width: 768px) {
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+      }
+
+      .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      .main-nav li {
+        margin: 0;
+      }
+
+      .nav-links {
+        margin-left: 40px;
+      }
+
+      .navbar-toggle {
+        display: none;
+      }
+
+      .nav-links:hover {
+        color: rgb(114, 114, 114);
+      }
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: rgb(255, 253, 253);
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: rgb(255, 253, 253);
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+      </span>
+      <ul class="main-nav" id="js-menu">
+        <li>
+          <a href="index.html" class="nav-links">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav-links">FAQ</a>
+        </li>
+        <li>
+          <a href="meettheteam.html" class="nav-links">Meet the Team</a>
+        </li>
+        <li>
+          <a href="contactus.html" class="nav-links">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="about-section">
+      <h1>2nd Financial Freedom</h1>
+      <p>Debt Coaching Services</p>
+      <p>We specialize in Debt to income Ratio, let us help you negotiate your way to Debt Freedom!</p>
+    </div>
+  </header>
+
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/Sept 1 2021.jpg" alt="Antonio" style="width:100%">
+        <div class="container">
+          <h2>Antonio Viviano Avila</h2>
+          <p class="title">CEO & Founder</p>
+          <p>2nd Financial Freedom founder, Debt Coaching Services.</p>
+          <p>antonio@2finfree.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/Shelby lacma.JPG" alt="Shelby" style="width:100%">
+        <div class="container">
+          <h2>Shelby Marie Flores</h2>
+          <p class="title">Product Specialist</p>
+          <p>DEBT COACHING SERVICES is JUST a click away!</p>
+          <p>shelby@2finfree.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="images/roscoe6.JPG" alt="Roscoe" style="width:100%">
+        <div class="container">
+          <h2>Roscoe</h2>
+          <p class="title">Designer</p>
+          <p>He'll chew through debt, cutting your balance in half!</p>
+          <p>Roscoe@ppg.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
+
+    navBarToggle.addEventListener('click', function () {
+
+      mainNav.classList.toggle('active');
+    });
+  </script>
+
+  <div class="footer">
+    <h2>2021</h2>
+  </div>
+</body>
+
+</html>
