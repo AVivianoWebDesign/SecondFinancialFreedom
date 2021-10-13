@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="2nd Financial Freedom">
+
+    <title>Antonio Avila</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./index.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+
+
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            font-size: 18px;
+            padding-bottom: 10px;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 250px;
+            right: 20px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+
+        }
+
+        .active {
+            display: block;
+
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .nav-links:hover {
+                color: rgb(114, 114, 114);
+            }
+        }
+
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style inputs */
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style the container/contact section */
+        .container {
+            border-radius: 5px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        /* Create two columns that float next to eachother */
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+
+        /* Set the size of the div element that contains the map */
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other
+        instead
+        of next to each other */
+        @media screen and (max-width: 600px) {
+
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </span>
+            <ul class="main-nav" id="js-menu">
+                <li>
+                    <a href="index.html" class="nav-links">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-links">FAQ</a>
+                </li>
+                <li>
+                    <a href="meettheteam.html" class="nav-links">Meet the Team</a>
+                </li>
+                <li>
+                    <a href="contactus.html" class="nav-links">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="about-section">
+            <h1>2nd Financial Freedom</h1>
+            <p>Debt Coaching Services</p>
+            <p>We specialize in Debt to income Ratio, let us help you negotiate your way to Debt Freedom!</p>
+        </div>
+    </header>
+    <h2>Debt Coaching Services</h2>
+    <p> register for open enrollment now open. </p>
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Open Enrollment</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <!--The div element for the map -->
+                <div id="map"></div>
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="USA">USA</option>
+                        <option value="America">America</option>
+                        <option value="Merica">Merica</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="column">
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8M9v2Pk2yMnyFTzoat-PVrhWYrQ2Lig8&callback=initMap&libraries=&v=weekly"
+                async></script>
+            </div>
+        </div>
+    </div>
+    <script>
+        let mainNav = document.getElementById('js-menu');
+        let navBarToggle = document.getElementById('js-navbar-toggle');
+    
+        navBarToggle.addEventListener('click', function () {
+    
+          mainNav.classList.toggle('active');
+        });
+      </script>
+    
+ 
+
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: 33.74, lng: -117.88 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+
+    </script>
+</body>
+
+</html>

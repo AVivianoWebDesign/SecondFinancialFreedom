@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .navbar {
+    font-size: 18px;
+    padding-bottom: 10px;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+  
+  .nav-links {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+  
+  .navbar-toggle {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+  
+  }
+  
+  .active {
+    display: block;
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+  
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+  
+    .main-nav li {
+        margin: 0;
+    }
+  
+    .nav-links {
+        margin-left: 40px;
+    }
+  
+    .navbar-toggle {
+        display: none;
+    }
+  
+    .nav-links:hover {
+        color: rgb(114, 114, 114);
+    }
+  }
+    
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  /* Column container */
+  .row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 29%;
+    background-color: white;
+    padding: 20px;
+  }
+  
+ 
+  .img {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+ 
+  }
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+    
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+  
+
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 253, 253);
+  }
+  
